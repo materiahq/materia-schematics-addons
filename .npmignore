@@ -1,2 +1,2 @@
 # Ignores TypeScript files, but keeps definitions.
-index.ts
+./src/materia-schematics-addons/index.ts
