@@ -1,0 +1,23 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "id": "materia-schematics addons",
+    "title": "Materia Addon Options Schema",
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string",
+        "description": "The name of the addon.",
+        "default": "addon-boilerplate"
+      },
+      "prefix": {
+        "type": "string",
+        "description": "Angular component prefix.",
+        "default": "materia"
+      },
+      "packageName": {
+        "type": "string",
+        "description": "Package name of the addon"
+      }
+    },
+    "required": []
+  }

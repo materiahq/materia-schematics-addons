@@ -1,0 +1,10 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "new": {
+      "description": "Create a new Materia Addon project.",
+      "factory": "./materia-schematics-addons/index#materiaSchematicsAddons",
+      "schema": "./schema.json"
+    }
+  }
+}
