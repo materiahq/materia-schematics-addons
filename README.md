@@ -21,6 +21,11 @@ yarn global add @angular-devkit/schematics-cli @materia/schematics-addons
 Run this comand in the folder where you want to generate your new addon folder:
 
 ```bash
-schematics @materia/schematics-addons:new --name=YOUR_ADDON_NAME
+schematics @materia/schematics-addons:new --name=ADDON_NAME --packageName=PACKAGE_NAME --prefix=COMPONENT_PREFIX 
 ```
+
+All params are optional:
+- name: Name of your addon (default: 'addon-boilerplate'),
+- prefix: Prefix used in angular for the client side part (default: 'materia'),
+- packageName: Name used in package.json if different from name.
  
