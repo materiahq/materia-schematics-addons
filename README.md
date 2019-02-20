@@ -1,28 +1,26 @@
-# Getting Started With Schematics
+# Getting Started @materia/schematics-addons
 
-This repository is a basic Schematic implementation that serves as a starting point to create and publish Schematics to NPM.
+This package is used to generate a Materia Addon automatically using Angular schematics.
 
-### Testing
+To use it you will need to:
+ - install `@angular-devkit/schematics-cli` globally and use the `schematics` command line tool,
+ - install `@materia/schematics-addons` globally.
 
-To test locally, install `@angular-devkit/schematics-cli` globally and use the `schematics` command line tool. That tool acts the same as the `generate` command of the Angular CLI, but also has a debug mode.
 
-Check the documentation with
-```bash
-schematics --help
+Run following command with npm:
+ ```bash
+npm install -g @angular-devkit/schematics-cli @materia/schematics-addons
+```
+or using yarn:
+ ```bash
+yarn global add @angular-devkit/schematics-cli @materia/schematics-addons
 ```
 
-### Unit Testing
+### Generate a new addon
 
-`npm run test` will run the unit tests, using Jasmine as a runner and test framework.
-
-### Publishing
-
-To publish, simply do:
+Run this comand in the folder where you want to generate your new addon folder:
 
 ```bash
-npm run build
-npm publish
+schematics @materia/schematics-addons:new --name=YOUR_ADDON_NAME
 ```
-
-That's it!
  
