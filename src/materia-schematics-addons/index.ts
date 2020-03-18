@@ -22,6 +22,9 @@ export function materiaSchematicsAddons(options: any): Rule {
       mergeWith(
         apply(empty(), [createClient(options), noop(), move(`${options.name}/client`)])
       ),
+      mergeWith(
+        apply(empty(), [createScripts(), noop(), move(`${options.name}/scripts`)])
+      ),
       (_tree: Tree, context: SchematicContext) => {
         context.addTask(new NodePackageInstallTask(options.name));
       }
@@ -62,6 +65,13 @@ export function createClient(options: any): Rule {
         ...options,
         dashname: strings.dasherize(options.name)
       })
+    ]));
+}
+
+export function createScripts(): Rule {
+  return mergeWith(
+    apply(url('./files/scripts'), [
+      noop()
     ]));
 }
 
