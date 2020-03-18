@@ -21,11 +21,19 @@
     "url": "git+https://github.com/materiahq/materia-schematics-addons.git"
   },
   "dependencies": {
-    "@angular-devkit/core": "^0.7.5",
-    "@angular-devkit/schematics": "^0.7.5",
+    "@angular-devkit/core": "^9.0.3",
+    "@angular-devkit/schematics": "^9.0.3"
+  },
+  "devDependencies": {
+    "@angular/cdk": "^9.0.1",
+    "@angular/common": "^9.0.2",
+    "@angular/core": "^9.0.2",
+    "@angular/forms": "^9.0.2",
+    "@angular/material": "^9.0.1",
+    "@materia/addons": "^1.0.0",
     "@types/jasmine": "^2.6.0",
-    "@types/node": "^8.0.31",
+    "@types/node": "^12.11.1",
     "jasmine": "^2.8.0",
-    "typescript": "^2.5.2"
+    "typescript": "^3.7.5"
   }
 }

@@ -1,16 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
-import {
-  MatButtonModule,
-  MatRippleModule,
-  MatSnackBarModule,
-  MatCardModule,
-  MatIconModule,
-  MatDialogModule,
-  MatInputModule
-} from '@angular/material';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatInputModule } from '@angular/material/input';
 
 import { Addon } from '@materia/addons';
 
@@ -21,11 +17,8 @@ import { <%= utils.classify(name) %>SetupComponent } from './<%= dashname %>-set
 @NgModule({
   imports: [
     CommonModule,
-    FormsModule,
     ReactiveFormsModule,
-    MatRippleModule,
     MatButtonModule,
-    MatSnackBarModule,
     MatCardModule,
     MatIconModule,
     MatDialogModule,

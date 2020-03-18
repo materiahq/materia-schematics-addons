@@ -47,7 +47,7 @@
     "defaultProject": "<%= utils.dasherize(name) %>",
     "schematics": {
       "@schematics/angular:component": {
-        "styleext": "scss"
+        "style": "scss"
       }
     }
   }
